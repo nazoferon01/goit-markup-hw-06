@@ -59,16 +59,57 @@
             <div class="container main-container">
                 <h1 class="mainpage-title">Эффективные решения для вашего бизнеса</h1>
                 <button class="btn btn-container" type="button" data-modal-open>Заказать услугу</button>
+                <!-- Модальное окно -->
                 <div class="backdrop is-hidden" data-modal>
-                    <div class="modal">
-                        <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe perspiciatis fugiat illo in
-                                        commodi at nesciunt, veniam beatae quod quo numquam enim minima tenetur accusantium debitis
-                                        nostrum laborum nobis maxime!</p> -->
-                        <button data-modal-close class="closes">
-                            <svg class="modal-close">
+                    <div class="modal-order">
+                        <button type="button" class="btn-close-modal" data-modal-close>
+                            <svg class="modal-icon" width="11" height="11">
                                 <use href="./images/symbol-defs.svg#icon-close"></use>
                             </svg>
                         </button>
+                        <!-- Форма модального окна -->
+                        <form class="form-modal-order">
+                            <h3 class="title-form">Оставьте свои данные, мы вам перезвоним</h3>
+
+                            <label for="name-order" class="name-input-order">Имя</label>
+                            <label class="form-field">
+                                <input type="text" class="input-form-order" name="name-order" id="name-order" />
+                                <svg class="svg-form" width="18" height="18">
+                                    <use href="./images/symbol-defs.svg#icon-person-lable"></use>
+                                </svg>
+                            </label>
+
+                            <label for="tel-order" class="name-input-order">Телефон</label>
+                            <label class="form-field">
+                                <input type="tel" name="tel-order" id="tel-order" class="input-form-order" />
+                                <svg class="svg-form" width="18" height="18">
+                                    <use href="./images/symbol-defs.svg#icon-phone-lable"></use>
+                                </svg>
+                            </label>
+
+                            <label for="email-order" class="name-input-order">Почта</label>
+                            <label class="form-field">
+                                <input type="email" name="email-order" id="email-order" class="input-form-order" />
+                                <svg class="svg-form" width="18" height="18">
+                                    <use href="./images/symbol-defs.svg#icon-mail-lable"></use>
+                                </svg>
+                            </label>
+
+                            <div class="comment-box">
+                                <label for="comments-order" class="name-input-order">Комментарий</label>
+                                <textarea name="comments-order" id="comments-order" rows="5" placeholder="Введите текст"
+                                    class="input-form-order"></textarea>
+                            </div>
+                            <!-- Checkbox Договора соглашения -->
+                            <label class="text-checkbox-order">
+                                <input class="checkbox-policy" type="checkbox" name="policy" value="policy" />
+                                <span class="svg-checkbox"></span>
+                                Соглашаюсь с рассылкой и принимаю
+                                <a href="#" class="link-policy"> Условия договора </a>
+                            </label>
+
+                            <button type="submit" class="button btn-modal-form-order">Отправить</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -422,7 +463,7 @@
                     <button type="submit" class="footer-btn-subscrib">
                         Подписаться
                         <svg class="icon-subscribe" width="24" height="24">
-                            <use href="./images/symbol-defs.svg#icon-subscribe"></use>
+                            <use href="./images/symbol-defs.svg#icon-send"></use>
                         </svg>
                     </button>
                 </form>
