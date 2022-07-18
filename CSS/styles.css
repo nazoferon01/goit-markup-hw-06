@@ -92,6 +92,11 @@ a {
     padding: 0;
 }
 
+input,
+textarea {
+  outline: none;
+}
+
 .header {
     border-bottom: 1px solid #EEEEEE;
 }
@@ -863,7 +868,7 @@ background-position: center;
   
   .input-form-order {
     display: block;
-    padding-left: 42px;
+    padding-left: 16px;
   }
   
   .input-form-order:focus {
@@ -929,6 +934,8 @@ background-position: center;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.89;
+    display: flex;
+    align-items: center;
   
     transition: background-color var(--animation-transition);
   }
